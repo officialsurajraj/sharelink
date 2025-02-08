@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+:root {
+    --margin: 20px 50px;
+    --padding: 10px 50px;
+    --color: blue;
+    --background: rgb(231, 229, 229);
+    --padding-top: 20px;
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;           
+    width: 100%;          
+    background-color: white;
+    color: white;       
+    padding: 10px 0;      
+    z-index: 1000;  
+}
+
+header nav {
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--padding-top);
+}
+
+nav div a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+nav div a img{
+    width: 146px;
+    height:auto;
+    margin-top: -24px;
+    margin-left: -20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 30px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+nav .svg{
+    color: #000;
+}
+nav .svg img{
+    background: #000;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+/* Home Section */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 80px 20px;
+    /* text-align: left; */
+    margin-top: 20px;
+}
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #bbb;
+}
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+.cta-button:hover {
+    background-color: #e64a19;
+}
+.hero-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 120px;
+    font-size: 18px;
+    margin-top: 20px;
+    position: absolute;
+    left: 260px;
+    background: blue;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.about {
+   width: 100%;
+   height: 520px;
+}
+.about h2{
+    font-size: 30px;
+}
+.flex{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+    padding: 10px 130px;
+    margin-bottom: 40px;
+   
+}
+
+.flex .text {
+    width: 48%;
+    height: 300px;
+}
+.flex .text p{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex .image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.course-section {
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    padding-left: 60px;
+}
+
+.course-section h2 {
+    font-size: 1.9rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-between; /* Space out the divs evenly */
+    gap: 30px; /* Add space between the items */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    margin-bottom: 23px;
+}
+
+/* Individual Course Item */
+.course-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Set the width to 30% so there are 3 items in one row */
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Course Item Hover Effect */
+.course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Image */
+.course-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Course Title */
+.course-item h3 {
+    font-size: 1.6rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Course Description */
+.course-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 100px;
+
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #0056b3;
+}
+
